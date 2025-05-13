@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nama_ekspedisi', 255)->unique();
             $table->string('logo_ekspedisi', 255);
             $table->enum('jenis_ongkir', ['ekonomi', 'regular', 'express', 'cod', 'sameday'])->unique();
-            $table->string('propinsi', 1100)->unique();
+            $table->string('propinsi', 255)->unique();
             $table->string('kota', 100)->unique();
             $table->integer('biaya_ongkir');
             $table->timestamps();
